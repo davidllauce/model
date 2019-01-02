@@ -1,0 +1,349 @@
+
+.font-nota20{
+    font-family: 'Signika Negative', sans-serif !important;
+}
+
+/* -----------------------------------------------------------ADMIN 4B: TABLE**/
+.table{
+    border-collapse: none !important; 
+    border-spacing: 0 !important;
+}
+
+/* --------------------------------------------------------- ADMIN 4B: SIDEBAR **/
+.app-sidebar, .sidebar-footer {
+    background: #212230 !important;
+}
+.sidebar-nav > .sidebar-nav-group >.sidebar-nav-link.collapsed {
+    background: #2a2d3d !important;
+}
+.sidebar-nav-link:hover {
+    background: #2a2d3d !important;
+}
+.app-sidebar::-webkit-scrollbar {
+    background: #212230 !important;
+}
+.app .app-body .app-sidebar::-webkit-scrollbar-thumb { 
+    background-color:#4c4f5e !important;
+}
+
+/* --------------------------------------------------------- GLOBAL **/
+
+.font-weight-bold-v1{
+    font-weight: bold;
+    color: rgb(255, 145, 0);
+}
+
+.div-content__body{
+    height: calc(var(--app-content-height) - 47px) !important;
+}
+
+.border-dashed-frame {
+    border       : none; 
+    border-style : dashed; 
+    border-width : 2px;
+    border-color : #A1A1A1;
+    padding      : 10px;
+    border-radius: 5px;
+}
+
+.border-dashed-sms{
+    border         : none; 
+    border-style   : dashed; 
+    border-width   : 2px;
+    border-color   : #A1A1A1;
+    padding        : 10px;
+    border-radius  : 5px;
+    font-weight    : bold;
+    color          : #A1A1A1;
+    font-family    : monospace;
+    font-size      : x-large; 
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.h-100{
+    height: 100% !important;
+}
+
+.div-content{
+    height: var(--app-content-height);
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.bg-black-trans{
+    background: #00000094;
+    color:white;
+}
+
+.text-compact{
+    word-wrap: break-word;
+}
+
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
+.ellipsis {
+    overflow     : hidden !important;
+    white-space  : nowrap !important;
+    text-overflow: ellipsis !important;
+}
+.btn-outline-orange {
+    color: rgb(255, 145, 0);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(255, 145, 0);
+}
+.text-orange{
+    color: rgb(255, 145, 0);
+}
+
+.bg-orange{
+    background: rgb(255, 145, 0);
+}
+
+.btn-orange{
+    background: rgb(255, 145, 0);
+    color: white;
+}
+.badge-orange{
+    background: rgb(255, 145, 0);
+    color: white;
+}
+.td-select{
+    background:#ff910040;
+}
+
+.height-content{
+    height: var(--app-content-height);
+}
+
+.table-height{
+    height: calc(var(--app-content-height) - 63px);
+}
+
+.table-height-scroll{
+    height: calc(var(--app-content-height) - 63px - 50px);
+    overflow: scroll;
+}
+
+.table-modal-height{
+    max-height: calc((var(--app-window-height)/2) + 70px )  
+}
+
+.table-empty{
+    text-align : center;
+    font-weight: bold;
+    font-size  : 20px;
+    font-family: monospace;
+    color      : #21252966;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+.slide-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.slide-content::-webkit-scrollbar-track {
+      background-color: #E2E2E2;
+} 
+ 
+.slide-content::-webkit-scrollbar-thumb {
+      background-color: rgb(255, 145, 0); 
+      border-radius: 10px;
+} 
+ 
+.slide-content::-webkit-scrollbar-button {
+      background-color: #E2E2E2;
+} 
+
+#sidebar-preview{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: var(--app-content-height);
+    padding: 0;
+}
+
+#sidebar-preview.show{
+    margin-top: var(--app-nav-height);
+    position: absolute;
+    padding-top: 0;
+    transition:all 1.9s ease;
+    width: 75%;
+}
+
+#sidebar-schema.show{
+    margin-top: var(--app-nav-height);
+    position: absolute;
+    padding-top: 0;
+    transition:all 1.9s ease;
+    width: 30%;
+}
+
+#sidebar-preview-student{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: var(--app-content-height);
+    padding: 0;
+}
+
+#sidebar-preview-student.show{
+    position: absolute;
+    padding-top: 0;
+    transition:all 1.9s ease;
+    width: 80%;
+}
+
+ #btn-sidebar-show {
+    border-radius: 0 10px 10px 0;
+    border:solid 2px;
+    margin-top:60px;
+    position: fixed;
+    left: 0;
+    z-index: 30;
+}
+
+
+#btn-schema-show{
+    border-radius: 10px 0 0 10px;
+    border:solid 2px;
+    margin-top:60px;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+}
+
+#btn-sidebar-show.respon{
+    left: 75%;
+}
+
+#btn-schema-show.respon{
+    right: 30%;
+}
+
+/* ---------------------------------------------------------LOADING **/
+#content-load {
+    background-color: white;
+    height          : 100%;
+    width           : 100%;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    position        : fixed;
+    z-index         : 1031;
+}
+#load {
+    padding : 15px;
+    height  : 20%;
+    width   : 100%;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+    margin  : auto;
+}
+
+.modal-content-load {
+    top               : 0;
+    left              : 0;
+    right             : 0;
+    bottom            : 0;
+    position          : fixed;
+    z-index           : 1000;
+}
+.modal-load {
+    text-align       : center;
+    height           : 60px;
+    position         : absolute;
+    top              : 0;
+    left             : 0;
+    right            : 0;
+    bottom           : 0;
+    margin           : auto;
+}
+
+.spinner-active {
+    color: rgb(255, 145, 0);
+    -webkit-animation: girar 1s linear infinite;
+    -o-animation: girar 1s linear infinite;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar{
+    from{transform: rotate(0deg);}
+    to{transform  : rotate(360deg);}
+}
+
+/* --------------------------------------------------------- CARDS **/
+.card-badge {
+    font-size: 20px;
+    margin-top: -35px;
+}
+
+/* -------------------------------------------------------- FONT GOOGLE */
+
+.secrea-font{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.nota20-font{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/* -------------------------------------------------------- TEXT **/
+.nota20-text-default{
+    color: #FBCC43 !important;
+}
+
+.nota20-text-secondary {
+    color: #3E3E3D !important;
+}
+
+/*---------------------------------------------------------CHOICE and QUESTION **/
+.question{
+    text-align: center;
+    font-size: x-large;
+    word-wrap: break-word;
+}
+.choice{
+    border-left: solid rgba(220, 220, 220, 0.596) 5px;
+    background: rgba(220, 220, 220, 0.596);
+    border-radius:7px;
+    padding: 10px;
+    width: 100%;
+    text-align:left;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.choice-danger{
+    border-left: solid 5px rgba(255, 0, 0, 0.795);
+    color:rgba(255, 0, 0, 0.795);
+    font-weight: bold;
+}
+
+.choice-success{
+    border-left: solid 5px rgb(0, 187, 84);
+    color: rgb(0, 187, 84);
+    font-weight: bold;
+}
+
+.choice:hover{
+    border-left: solid rgb(255, 145, 0) 5px; 
+    font-weight: bold;
+}
+
+
